@@ -80,6 +80,8 @@ th { font-weight: normal; }
 
 address { font-style: inherit; }
 
+button { all: unset; }
+
 .sr-only {
   position: absolute;
   width: 1px;
