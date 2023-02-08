@@ -5,8 +5,13 @@ main {
   background-color: var(--color-light-bg);
 }
 
-#about {
+#about, #curriculum {
   grid-column: 1/-1;
+}
+
+#curriculum {
+  background-color: var(--color-dark);
+  padding-bottom: 88px;
 }
 
 .section {
