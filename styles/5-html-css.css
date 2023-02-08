@@ -1,5 +1,121 @@
+#html, #css {
+  background-color: white;
+}
+
+.html-css {
+  display: flex;
+  gap: 56px;
+  margin: 56px 0;
+}
+
+.html-css-title {
+  font-size: var(--font-size-subtitle);
+  font-weight: lighter;
+}
+
+.html-css-spec {
+  display: flex;
+  justify-content: center;
+  gap: 1.2em;
+  color: var(--color-lighter);
+  font-size: var(--font-size-larger);
+  margin-top: 1.6em;
+}
+
+.html-css-spec div::before {
+  content: '';
+  display: inline-block;
+  margin-right: 0.4em;
+  width: 12px;
+  height: 6px;
+  border-left: 4px solid var(--color-sub);
+  border-bottom: 4px solid var(--color-sub);
+  vertical-align: 0.2em;
+  transform: rotate(-45deg);
+}
+
+#html .html-css-title em {
+  color: #F16528;
+}
+
+#css .html-css-title em {
+  color: #2965F1;
+}
+
+.html-css-text {
+  font-size: var(--font-size-text);
+  margin-top: 1.6em;
+}
+
+.html-css-text strong {
+  font-weight: bold;
+}
+
+.html-css-thumb {
+  position: relative;
+}
+
+
+.html-css-thumb::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: black;
+  height: 10%;
+  border-radius: 50%;
+  bottom: -16%;
+}
+
+@keyframes logo-hover {
+  from { transform: translateY(0); }
+  to { transform: translateY(10px); }
+}
+
+.html-css-thumb img {
+  animation-name: logo-hover;
+  animation-duration: 800ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* 짙고 옅어지는 애니메이션 */
+@keyframes logo-shadow {
+  from { opacity: 0.08; }
+  to { opacity: 0.24; }
+}
+
+.html-css-thumb::after {
+  animation-name: logo-shadow;
+  animation-duration: 800ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 @media (max-width: 768px) {
+  .html-css {
+    flex-direction: column;
+    align-items: center;
+  }
+  .html-css-thumb img {
+    width: 50%;
+    max-width: 300px;
+  }
+  .html-css-thumb::after {
+    width: 50%;
+    left: 25%;
+  }
 }
 
 @media (min-width: 769px) {
+  .html-css {
+    justify-content: center;
+  }
+  .html-css-thumb img {
+    width: 144px;
+  }
+  .html-css-thumb::after{
+    width: 144px;
+  }
 }
