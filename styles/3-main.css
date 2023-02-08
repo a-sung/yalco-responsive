@@ -1,7 +1,6 @@
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 4px;
   text-align: center;
   background-color: var(--color-light-bg);
 }
@@ -24,5 +23,16 @@ main {
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  main {
+    grid-row-gap: 4px;
+  }
+  #html, #css {
+    grid-column: 1/-1;
+  }
+}
 @media (min-width: 769px) {
+  main {
+    grid-column-gap: 4px;
+  }
 }
