@@ -1,2 +1,27 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  background-color: var(--color-light-bg);
+}
+
+#about {
+  grid-column: 1/-1;
+}
+
+.section {
+  padding: 64px 16px;
+}
+
+.section-tag {
+  color: var(--color-sub);
+  font-size: var(--font-size-tag);
+}
+
+.section-title {
+  font-size: var(--font-size-title);
+  font-weight: bold;
+}
+
 @media (min-width: 769px) {
 }
