@@ -50,10 +50,16 @@
   .about-card {
     width: 25%;
     max-width: 320px;
+    transition: all 350ms;
+  }
+  .about-icon {
+    opacity: 0.3;
+  }
+  .about-card:hover .about-icon {
+    opacity: 1;
   }
   .about:hover .about-card:not(:hover) {
     scale: 0.9;
-    transition: all 350ms;
   }
   .about:hover .about-card:not(:hover) {
     filter: blur(2px);
