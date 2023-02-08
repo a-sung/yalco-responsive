@@ -1,5 +1,61 @@
+.about {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 48px;
+}
+
+.about-card {
+  background-color: var(--color-dark);
+  border-radius: 12px;
+  padding: 48px;
+}
+.about-icon {
+  width: 120px;
+  height: 120px;
+}
+
+[class^="about-title"] {
+  margin-top: 0.6rem;
+  font-size: var(--font-size-larger);
+  font-weight: bold;
+}
+
+.about-title-1 {
+  color: #FFB974;
+}
+
+.about-title-2 {
+  color: #6BB0F3;
+}
+
+.about-title-3 {
+  color: #FFBDCE;
+}
+
+.about-text {
+  font-size: var(--font-size-text);
+  color: white;
+  margin-top: 0.8em;
+}
+
 @media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 @media (min-width: 769px) {
+  .about-card {
+    width: 25%;
+    max-width: 320px;
+  }
+  .about:hover .about-card:not(:hover) {
+    scale: 0.9;
+    transition: all 350ms;
+  }
+  .about:hover .about-card:not(:hover) {
+    filter: blur(2px);
+  }
 }
