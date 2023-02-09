@@ -122,6 +122,33 @@ input[type=radio]:checked {
   outline: none;
 }
 
+.contact-contacts {
+  border-spacing: 3em 1em;
+  margin: 0 auto;
+}
+
+.contact-contacts img {
+  width: 32px;
+  vertical-align: middle;
+}
+
+.contact-contacts th {
+  padding-right: 3em;
+  border-right: 4px solid var(--color-light-bd);
+  color: var(--color-dark);
+  font-size: var(--font-size-text);
+  font-weight: bold;
+}
+
+.contact-contacts td {
+  text-align: left;
+}
+
+.contact-contacts a:hover {
+  color: var(--color-emph);
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   input[type=radio] {
     padding: 0.8em 2em;
