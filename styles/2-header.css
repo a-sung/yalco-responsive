@@ -6,6 +6,7 @@
   background-color: var(--color-main);
   z-index: 2;
   position: sticky;
+  top: 0;
 }
 
 .header-link-home {
