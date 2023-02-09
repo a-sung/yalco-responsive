@@ -5,7 +5,7 @@ main {
   background-color: var(--color-light-bg);
 }
 
-#about, #curriculum {
+#about, #curriculum, #contact {
   grid-column: 1/-1;
 }
 
