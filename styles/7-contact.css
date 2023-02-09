@@ -123,7 +123,6 @@ input[type=radio]:checked {
 }
 
 .contact-contacts {
-  border-spacing: 3em 1em;
   margin: 0 auto;
 }
 
@@ -166,11 +165,26 @@ input[type=radio]:checked {
   .contact-leave input[type=email] {
     width: 80vw;
   }
+  .contact-contacts th {
+    display: none;
+  }
+  .contact-contacts td {
+    padding: 0.6em 0;
+  }
+  .contact-contacts td::before {
+    content: '▶';
+    opacity: 0.5;
+    font-size: var(--font-size-text);
+    margin-right: 0.6em;
+  }
 }
 
 @media (min-width: 769px) {
   .contact-leave textarea,
   .contact-leave input[type=email] {
     width: 360px;
+  }
+  .contact-contacts {
+    border-spacing: 3em 1em;
   }
 }
