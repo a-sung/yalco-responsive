@@ -60,7 +60,7 @@
   }
   .curriculum-list li {
     position: relative;
-    width: 200px;
+    width: 120px;
     height: 120px;
   }
   .curriculum-list li span {
@@ -74,6 +74,54 @@
   }
   .curriculum-list li:hover span {
     opacity: 1;
+  }
+  .curriculum-progress {
+    /*width: 1000px;*/
+    width: 80%;
+    top: 66px;
+    left: 56px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .curriculum-progress::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    background-color: var(--color-sub);
+    width: 0;
+    height: 8px;
+    transition: all 1s;
+  }
+  .curriculum-list li:hover::before {
+    background-color: var(--color-sub);
+  }
+  .curriculum-list li:nth-child(2):hover
+  ~ .curriculum-progress::after {
+    width: 120px;
+  }
+  .curriculum-list li:nth-child(3):hover
+  ~ .curriculum-progress::after {
+    width: 240px;
+  }
+  .curriculum-list li:nth-child(4):hover
+  ~ .curriculum-progress::after {
+    width: 360px;
+  }
+  .curriculum-list li:nth-child(5):hover
+  ~ .curriculum-progress::after {
+    width: 480px;
+  }
+  .curriculum-list li:nth-child(6):hover
+  ~ .curriculum-progress::after {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .curriculum-list li {
+    position: relative;
+    width: 200px;
+    height: 120px;
   }
   .curriculum-progress {
     width: 1000px;
